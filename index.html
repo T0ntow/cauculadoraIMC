@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauculadora - IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header-MP -->
+
+    <div class="headerMyP">
+
+        <span>
+            Página Criada apenas para aprendizado
+        </span>
+
+        <div class="container-logosMyP">
+            <a href="https://github.com/T0ntow" target="_blank" rel=external>
+                <img class="logosMyP" src="img-crono/GitHub-Logo.png" alt="LogoGit">
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=5577988431249&text=" target="_blank" rel=external>
+                <img class="logosMyP" src="img-crono/WhatsLogo.png" alt="LogoWhats">
+            </a>
+
+            <a href="https://www.instagram.com/wellingtonbs109/" target="_blank" rel=external>
+                <img class="logosMyP" src="img-crono/LogoInsta.png" alt="LogoInsta">
+            </a>
+        </div>
+
+    </div>
+
+    <!-- main -->
+
+    <div class="container">
+        <div class="box">
+            <h1>Cauculadora de IMC</h1>
+            <hr>
+            <div class="inputs">
+                <p title="nome">NOME:</p>
+                <input type="text" placeholder="digite seu nome ou apelido">
+            </div>
+            <div class="inputs">
+                <p title="Altura">ALTURA:</p>
+                <input type="text" placeholder="*digite sua altura (cm)*">
+            </div>
+            <div class="inputs">
+                <p title="Peso">PESO:</p>
+                <input type="text" placeholder ="*digite seu peso (kg)*">
+            </div>
+
+            <button style="font-size: 18px;" type="submit" id="button">Caucular</button>
+
+            <div class="display">
+                <span>
+                    <p>
+                        Ola ${nome} seu IMC é de ${IMC}
+                    </p>
+                    <p>
+                        Peso ${normal/acima do peso/abaixo do peso}
+                    </p>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
