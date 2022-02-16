@@ -114,7 +114,7 @@ button:hover{
     background-color: var(--cor3);
 }
 .display{
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: #4e4e4ea9;
     color: white;
 
     text-indent: 20px;
