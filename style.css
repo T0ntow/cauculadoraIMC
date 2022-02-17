@@ -22,7 +22,7 @@ body{
     box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.89); 
 
     height: 10vh;
-    max-width: 100vw;
+    width: 100vw;
 
     align-items: center;
     justify-content: space-between;
@@ -49,7 +49,7 @@ body{
 .container{
     max-width: 100vw;
     margin-top: 5vh;
-    height: 80vh;
+    height: 520px;
 
     display: flex;
     justify-content: center;
@@ -114,22 +114,29 @@ button:hover{
     background-color: var(--cor3);
 }
 .display{
-    background-color: #4e4e4ea9;
+    background-color: #363636e5;
     color: white;
 
-    text-indent: 20px;
     font-size: 20px;
     align-items: center;
+    text-align: center;
 
     width: 80%;
-    margin: 20px auto;
-    height: 20%;
+    transform: translateY(20px);
+    margin: auto ;
+    height: 150px;
 
-    display: flex;
     border-radius: 5px;
 }
 .display p{
-    margin: 20px 0;
+    margin: 25px 0;
+}
+.display div{
+    display: flex;
+    justify-content: space-around;
+}
+.display #tela2{
+    padding-bottom:5%;
 }
 hr{
     background-color: var(--cor3);
@@ -140,4 +147,46 @@ hr{
     border: none;
     display: flex;
     margin: auto;
+}
+
+
+input[type=number]::-webkit-inner-spin-button { 
+    height: 45px;
+    margin: 15px 25px;
+    padding: 5px;
+    transform: rotate(90deg);
+    filter: invert(100%) ; 
+    cursor: pointer;
+}
+/* BONECO */
+img{
+    width: 90px;
+    height: 90px;
+}
+/* RESPONSIVIDADE */
+
+
+@media screen and (max-width: 540px) {
+    .box{
+        max-width: 90vw;
+    }
+}
+@media screen and (max-width: 470px) {
+    .headerMyP span{
+        justify-content: center;
+        display: none;
+    }
+    .box h1{
+        font-size: 27px;
+    }
+    .box .inputs{
+        flex-direction: column;
+    }
+    .box .inputs input{
+        min-width: 90%;
+        font-size: 17px;
+    }
+    .box .inputs p{
+        font-size: 18px;
+    }
 }

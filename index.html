@@ -38,36 +38,39 @@
 
     <div class="container">
         <div class="box">
+
             <h1>Cauculadora de IMC</h1>
             <hr>
             <div class="inputs">
-                <p title="nome" >NOME:</p>
-                <input id="nome" type="text" placeholder="digite seu nome ou apelido">
+                <p title="Altura"> ALTURA:</p>
+                <input id="altura" type="number" min="10" step="10" max="280" placeholder="*digite sua altura (cm)*">
             </div>
             <div class="inputs">
-                <p title="Altura" > ALTURA:</p>
-                <input id="altura" type="text" placeholder="*digite sua altura (cm)*">
-            </div>
-            <div class="inputs">
-                <p title="Peso" >PESO:</p>
-                <input id="peso" type="text" placeholder ="*digite seu peso (kg)*">
+                <p title="Peso">PESO:</p>
+                <input id="peso" type="number" min="1" max="300" placeholder="*digite seu peso (kg)*">
             </div>
 
             <button style="font-size: 18px;" type="submit" id="button">Caucular</button>
 
             <div class="display">
-                <span>
-                    <p id="tela1">
-                        Digite acima sua altura e peso
-                    </p>
+                <p id="tela1">
+                    Digite acima sua altura e peso
+                </p>
+
+                <div id="tela_baixo">
                     <p id="tela2">
-                        
+                        sua classifição aparecerá aqui
                     </p>
-                </span>
+                    <img id="img" src="img/boneco.svg" alt="Boneco">
+                </div>
             </div>
+        </div>
+        <div class="box2">
 
         </div>
     </div>
+
     <script src="calcIMC.js"></script>
 </body>
+
 </html>
